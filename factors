@@ -1,0 +1,12 @@
+a=int(input("ENTER THE NUMBER:"))
+y=[]
+for i in range(1,a):
+    if(a%i==0):
+        y.append(i)
+print("THE FACTORS OF GIVEN NUMBER IS:" ,y)    
+print("THE TOTAL FACTORS OF",a,"IS",len(y))
+n=int(input("ENTER THE NUMBER OF FIRST TERM YOU WANT:"))
+if(n>len(y)):
+    print("INVALID")
+for j in range(0,n):
+    print(y[j],end=" ")
